@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<HTML>
+  <HEAD>
+    <SCRIPT type="text/javascript" src="jquery.min.js"></SCRIPT>
+    <SCRIPT type="text/javascript" src="../DivAssist.js"></SCRIPT>
+    <STYLE type="text/css">
+      BODY {
+      margin:0;      
+      }
+    </STYLE>
+  </HEAD>
+  <BODY bgcolor="white">    
+    <DIV id="sidebar" style="width:200px;border-right:1px solid black"></DIV>
+    <DIV id="topbar" style="position:absolute;top:0px;left:200px;height:200px;background-color:blue">This is a top bar with fixed height and maximized width.
+      <DIV style="position:absolute;right:1px;bottom:1px">Right-justified text</DIV>
+    </DIV>
+    <DIV id="main" style="position:absolute;top:200px;left:200px;"></DIV>
+    <SCRIPT>
+      var sideAssist = new DivAssist('sidebar');
+      sideAssist.addIframeColumn("mysidebar","iframe_sidebar.html",200);
+      var topAssist = new DivAssist('topbar');
+      topAssist.maximizeWidth();
+
+      var mainAssist = new DivAssist('main');
+      mainAssist.addMaxIframe("mymain","iframe_main.html");
+    </SCRIPT>
+  </BODY>
+</HTML>
+

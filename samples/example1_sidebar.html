@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<HTML>
+  <HEAD>
+    <SCRIPT type="text/javascript" src="jquery.min.js"></SCRIPT>
+    <SCRIPT type="text/javascript" src="../DivAssist.js"></SCRIPT>
+    <STYLE type="text/css">
+      BODY {
+      margin:0;      
+      }
+    </STYLE>
+  </HEAD>
+  <BODY bgcolor="white">    
+    <DIV id="sidebar" style="width:200px;border-right:1px solid black;background-color:#DDDDDD">This is the sidebar.  Notice that the the entire height of the browser is fully utilized and can handle resizing.<DIV style="position:absolute;bottom:1px;">Text at bottom of sidebar</DIV></DIV>
+    <DIV id="main" style="position:absolute;top:0px;left:200px;">This is where your main content would be stored. <DIV style="position:absolute;bottom:1px;right:1px">Text at bottom right of main</DIV></DIV>
+    <SCRIPT>
+      var sideAssist = new DivAssist('sidebar');
+      sideAssist.maximizeHeight();
+      var mainAssist = new DivAssist('main');
+      mainAssist.maximizeSize();
+    </SCRIPT>
+  </BODY>
+</HTML>
+
