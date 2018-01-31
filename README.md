@@ -6,7 +6,7 @@ Resize DIV dimensions easily.
 DivAssist is designed to solve a common problem with DIVs where you want
 the dimensions of your DIVs to fill up the available space on a page and
 also handle resizing of the web browser's dimensions.  In the past,
-the standard approach was to use <FRAMESET> tags, which automatically handled
+the standard approach was to use FRAMESET tags, which automatically handled
 the case when a browser was resized.  Unfortunately, DIV tags do not
 automatically resize by default.  DivAssist solves this problem,
 allowing DIVs to behave more like FRAMESETs.
